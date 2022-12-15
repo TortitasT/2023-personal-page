@@ -1,9 +1,5 @@
 <template>
-  <header>
-    <h1>Tortitas</h1>
-  </header>
+  <Header />
   <slot />
-  <footer>
-    <p>Footer</p>
-  </footer>
+  <Footer />
 </template>

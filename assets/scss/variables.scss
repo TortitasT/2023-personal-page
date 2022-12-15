@@ -1,0 +1,30 @@
+// :root {
+//   --bg-color: #0F1821;
+
+//   --fg-color: #fff;
+//   --fg-headline-color: #fff;
+
+//   --button-color: #2f2f2f;
+//   --fg-button-color: var(--fg-color);
+
+//   --link-color: rgb(134, 148, 255);
+//   --link-visited-color: var(--link-color);
+
+//   --font-family: 'Averia Serif Libre', 'Roboto', sans-serif;
+// }
+
+// https://www.happyhues.co/palettes/15
+:root {
+  --bg-color: #faeee7;
+
+  --fg-color: #594a4e;
+  --fg-headline-color: #33272a;
+
+  --button-color: #ff8ba7;
+  --fg-button-color: #33272a;
+
+  --link-color: var(--fg-color);
+  --link-visited-color: var(--link-color);
+
+  --font-family: 'Averia Serif Libre', 'Roboto', sans-serif;
+}
