@@ -1,5 +1,8 @@
 @import 'fonts';
 @import 'variables';
+@import 'pages/main';
+@import 'html/buttons';
+@import 'animations/underline';
 
 html {
   font-size: 150%;
@@ -30,6 +33,18 @@ html {
       list-style: none;
       padding: 0;
       margin: 0;
+    }
+
+    .icon {
+      width: 25px;
+      height: 25px;
+
+      svg {
+        fill: var(--fg-color);
+
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }

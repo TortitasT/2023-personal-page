@@ -1,4 +1,6 @@
 <template>
+  <Noise />
+
   <Header />
   <slot />
   <Footer />
