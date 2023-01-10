@@ -1,26 +1,36 @@
 <template>
   <header class="header">
-    <button class="button--clean hamburger" @click="toggleMenu">
+    <button class="button--icon hamburger" @click="toggleMenu">
       <IconsHamburger />
     </button>
 
     <nav class="menu gradient" :class="{ 'active': showMenu }">
       <ul>
-        <li><nuxt-link class="underline" to="/">Home</nuxt-link></li>
-        <li><nuxt-link class="underline" to="/about">About</nuxt-link></li>
-        <li><nuxt-link class="underline" to="/projects">Projects</nuxt-link></li>
+        <li><nuxt-link @click="close" class="underline" to="/">Home</nuxt-link></li>
+        <li><nuxt-link @click="close" class="underline" to="/about">About</nuxt-link></li>
+        <li><nuxt-link @click="close" class="underline" to="/projects">Projects</nuxt-link></li>
       </ul>
     </nav>
   </header>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, watch, computed } from 'vue'
 
 const showMenu = ref(false)
 
 const toggleMenu = () => {
+  document.querySelector('.hamburger').classList.remove('button--icon--clicked')
+  document.querySelector('.hamburger').classList.add('button--icon--clicked')
+  setTimeout(() => {
+    document.querySelector('.hamburger').classList.remove('button--icon--clicked')
+  }, 400)
+
   showMenu.value = !showMenu.value
+}
+
+const close = () => {
+  showMenu.value = false
 }
 </script>
 

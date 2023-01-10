@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <small>
-      <a href="https://nuxtjs.org" target="_blank" rel="noopener">Made with Nuxt3 💚</a>
+      Made with <a href="https://nuxt.com" target="_blank" rel="noopener">Nuxt3</a> 💚
     </small>
   </footer>
 </template>

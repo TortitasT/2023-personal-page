@@ -1,0 +1,36 @@
+.text {
+  &--tortitas {
+    color: #fcffa2;
+  }
+
+  &--aws {
+    color: #ff972a;
+  }
+
+  &--nuxt {
+    color: #00c58e;
+  }
+
+  &--node {
+    color: #68a063;
+  }
+
+  &--php {
+    color: #8892bf;
+  }
+
+  &--laravel {
+    color: #ff2d20;
+  }
+
+  &--deno {
+    color: #a2ebee;
+  }
+}
+
+p,
+small {
+  a {
+    text-decoration: underline !important;
+  }
+}
