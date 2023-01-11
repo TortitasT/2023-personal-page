@@ -7,6 +7,10 @@
     >div {
       padding: 1em 2em;
 
+      @media (max-width: 575px) {
+        padding: 1em 0.5em;
+      }
+
       h3,
       p {
         margin: 0;
