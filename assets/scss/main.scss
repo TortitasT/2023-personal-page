@@ -9,6 +9,13 @@ html {
   font-size: 150%;
   font-family: var(--font-family);
 
+  cursor: url('~/assets/images/cursor.png') 15 15, auto;
+
+  button,
+  a {
+    cursor: url('~/assets/images/cursor.png') 15 15, auto !important;
+  }
+
   p,
   a,
   h1,
