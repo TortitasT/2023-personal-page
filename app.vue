@@ -1,5 +1,6 @@
 <template>
   <nuxt-layout>
+    <NuxtLoadingIndicator :height="50" />
     <router-view></router-view>
   </nuxt-layout>
 </template>

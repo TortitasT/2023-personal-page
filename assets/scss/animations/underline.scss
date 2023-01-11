@@ -16,8 +16,10 @@
     transition: transform 0.25s ease-out;
   }
 
-  &:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  @media(hover: hover) {
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
   }
 }

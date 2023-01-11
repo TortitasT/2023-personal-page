@@ -1,1 +1,59 @@
-.projects {}
+.projects {
+  .box-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    >div {
+      padding: 1em 2em;
+
+      h3,
+      p {
+        margin: 0;
+
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+      }
+
+      border: 4px dotted rgba(250, 250, 250, 0.2);
+      border-radius: 18px;
+
+      transition: border-color 0.25s ease-out;
+
+      @media(hover: hover) {
+        &:hover {
+          border-color: rgba(250, 250, 250, 0.5);
+        }
+      }
+
+      >a {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        >p {
+          font-size: 0.75em;
+        }
+      }
+
+      .languages {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5em;
+
+        >small {
+          font-size: 0.75em;
+        }
+      }
+
+      .template {
+        border: 1px solid var(--fg-color);
+        border-radius: 2em;
+        padding: 0.25em 0.5em;
+
+        font-size: 0.5em;
+      }
+    }
+  }
+}
