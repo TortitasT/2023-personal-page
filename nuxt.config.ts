@@ -6,8 +6,13 @@ export default defineNuxtConfig({
       viewport: 'width=500, initial-scale=1',
       title: 'Tortitas',
       meta: [
-        { name: 'description', content: 'Tortitas personal portfolio webpage.' }
+        { name: 'description', content: 'Tortitas personal portfolio webpage.' },
+        { name: 'keywords', content: 'portfolio, tortitas, tortitasdev' },
+        { name: 'author', content: 'Tortitas' },
       ],
+      htmlAttrs: {
+        lang: 'en'
+      }
     }
   },
 

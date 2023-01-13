@@ -17,5 +17,5 @@ export DOCKER_HOST='ssh://server@jonion.duckdns.org'
 Build and deploy:
 
 ```bash
-docker-compose up -d --force-recreate
+docker-compose up -d --build --force-recreate
 ```

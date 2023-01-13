@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <button class="button--icon hamburger" @click="toggleMenu">
+    <button :title="titleMenu" class="button--icon hamburger" @click="toggleMenu">
       <IconsHamburger />
     </button>
 
@@ -18,6 +18,9 @@
 import { ref, watch, computed } from 'vue'
 
 const showMenu = ref(false)
+const titleMenu = computed(() => {
+  return showMenu.value ? 'Close menu' : 'Open menu'
+})
 
 const toggleMenu = () => {
   document.querySelector('.hamburger').classList.remove('button--icon--clicked')
