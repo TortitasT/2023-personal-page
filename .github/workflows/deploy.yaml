@@ -9,10 +9,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Install docker 🐬
-        run: |
-          sudo apt-get remove -y docker docker-engine docker.io
-          sudo apt install -y docker.io
-          sudo snap install -y docker
+        run: sudo apt-get install -y docker-ce docker-ce-cli containerd.io
       - name: Setup SSH key 🔑
         uses: webfactory/ssh-agent@v0.7.0
         with:
