@@ -11,4 +11,7 @@
   "search.exclude": {
     "**/node_modules": true,
   },
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///c%3A/Users/victo/Documents/Git/2023-personal-page/.github/workflows/deploy.yaml"
+  },
 }
