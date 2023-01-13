@@ -12,11 +12,23 @@ jobs:
         run: sudo snap install docker
 
       - name: Setup SSH key 🔑
-        uses: webfactory/ssh-agent@v0.7.0
-        with:
-          ssh-private-key: ${{ secrets.SERVER_JONION_SSH_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SERVER_JONION_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+      - name: Setup SSH config 📄
+        run: |
+          echo "Host server" >> ~/.ssh/config
+          echo "  HostName jonion.duckdns.org" >> ~/.ssh/config
+          echo "  User server" >> ~/.ssh/config
+          echo "  IdentityFile ~/.ssh/id_rsa" >> ~/.ssh/config
+          echo "  StrictHostKeyChecking no" >> ~/.ssh/config
+
+      - name: Setup docker 🐬
+        run: |
+          export DOCKER_HOST='ssh://server@jonion.duckdns.org'
 
       - name: Deploy 🚀
         run: |
-          export DOCKER_HOST='ssh://server@jonion.duckdns.org'
           docker-compose up -d --force-recreate
