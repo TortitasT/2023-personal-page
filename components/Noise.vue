@@ -39,7 +39,7 @@
 
   pointer-events: none;
 
-  z-index: 999;
+  z-index: 1;
 
   &::after {
     content: "";
@@ -52,7 +52,7 @@
     background-image: url('~/assets/images/noise.png');
     background-size: 3em;
 
-    opacity: 0.4;
+    filter: opacity(0.3);
 
     animation: grain 1.5s steps(6) infinite;
   }
