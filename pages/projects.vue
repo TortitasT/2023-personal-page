@@ -47,6 +47,7 @@ const validate = (project) => {
 const projects = ref([])
 
 const { data } = await useFetch('/api/projects')
+
 projects.value = data.value.filter(project => {
   return validate(project)
 })

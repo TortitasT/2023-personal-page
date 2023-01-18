@@ -1,6 +1,12 @@
 version: "3.3"
 services:
-  nginx: 
+  # nginx: 
+  #   build: .
+  #   ports:
+  #     - "3000:80"
+
+  node:
     build: .
     ports:
-      - "3000:80"
+      - "3000:3000"
+    command: node .output/server/index.mjs
