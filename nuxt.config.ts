@@ -20,5 +20,25 @@ export default defineNuxtConfig({
       username: process.env.GITHUB_USERNAME,
       token: process.env.GITHUB_TOKEN
     }
-  }
+  },
+
+  modules: [
+    [
+      '@nuxtjs/i18n',
+      {
+        vueI18n: {
+          legacy: false,
+          locale: 'en',
+          messages: {
+            en: {
+              welcome: 'Welcome'
+            },
+            es: {
+              welcome: 'Bienvenido'
+            }
+          }
+        }
+      }
+    ]
+  ]
 })

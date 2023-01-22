@@ -12,7 +12,8 @@ html {
   cursor: url('~/assets/images/cursor.png') 15 15, auto;
 
   button,
-  a {
+  a,
+  select {
     cursor: url('~/assets/images/cursor.png') 15 15, auto !important;
   }
 

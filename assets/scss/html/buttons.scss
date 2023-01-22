@@ -43,6 +43,24 @@ button,
   }
 }
 
+select {
+  background: none;
+  border: none;
+
+  color: var(--fg-color);
+  font: inherit;
+
+  &:focus {
+    outline: none;
+  }
+
+  option {
+    background: var(--bg-color);
+    color: var(--fg-color);
+    border: none;
+  }
+}
+
 @keyframes ripple {
   0% {
     transform: scale(0);
