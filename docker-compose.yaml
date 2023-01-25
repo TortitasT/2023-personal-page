@@ -13,7 +13,7 @@ services:
 
   certbot:
     image: certbot/certbot:latest
-    command: certonly --webroot --webroot-path /var/www/certbot/ -d jonion.duckdns.org --email victorgf2011@gmail.com --agree-tos --no-eff-email --staging
+    command: certonly --webroot --webroot-path /var/www/certbot/ -d tortitas.eu --email victorgf2011@gmail.com --agree-tos --no-eff-email --staging
     volumes:
       - ./certbot/www/:/var/www/certbot/:rw
       - ./certbot/conf/:/etc/letsencrypt/:rw
