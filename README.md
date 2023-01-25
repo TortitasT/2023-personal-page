@@ -20,4 +20,12 @@ Remember to have a working .env file in the root directory locally so that it ge
 
 ```bash
 docker-compose up -d --build --force-recreate --remove-orphans
+
+crontab -e
+```
+
+Add the following line to the crontab:
+
+```bash
+0 5 1 */2 *  /usr/local/bin/docker-compose up -f /root/2023-personal-page/docker-compose.yaml certbot
 ```
