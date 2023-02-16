@@ -1,5 +1,6 @@
 <template>
   <Noise />
+  <Three />
 
   <Header />
   <slot />

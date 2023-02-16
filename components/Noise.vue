@@ -4,7 +4,6 @@
 
 <style lang="scss">
 @keyframes grain {
-
   0%,
   100% {
     transform: translate(0, 0);
@@ -49,7 +48,7 @@
     height: 200vh;
     left: -50%;
     top: -50%;
-    background-image: url('~/assets/images/noise.png');
+    background-image: url("~/assets/images/noise.png");
     background-size: 3em;
 
     filter: opacity(0.3);
