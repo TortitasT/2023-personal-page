@@ -12,12 +12,11 @@
   //   align-items: center;
   //   gap: 1em;
   // }
+  z-index: 3 !important;
 
   .menu {
     pointer-events: none;
     opacity: 0;
-
-    z-index: 2;
 
     &::before {
       content: '';

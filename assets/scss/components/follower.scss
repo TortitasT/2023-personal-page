@@ -1,0 +1,51 @@
+.follower-wrapper {
+  position: fixed;
+  inset: 0;
+
+  overflow: hidden;
+
+  .follower {
+    @media (hover: none) {
+      display: none;
+    }
+
+    z-index: 0;
+    position: absolute;
+    display: block;
+
+    pointer-events: none;
+
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.25;
+    filter: blur(25px);
+
+    animation: follower 5s ease-in-out infinite alternate;
+
+    will-change: left,
+    top,
+    width;
+
+    @keyframes follower {
+      0% {
+        transform: translate(-50%, -50%);
+        height: 400px;
+      }
+
+      50% {
+        height: 375px;
+      }
+
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        height: 450px;
+      }
+    }
+  }
+}

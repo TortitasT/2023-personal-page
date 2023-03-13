@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "eslint": "^8.31.0",
-    "nuxt": "3.0.0"
+    "nuxt": "^3.2.3"
   },
   "dependencies": {
     "sass": "^1.56.2",
