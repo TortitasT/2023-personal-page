@@ -1,5 +1,5 @@
 <template>
-  <main class="about">
+  <main class="page about">
     <h1>About</h1>
 
     <p>
