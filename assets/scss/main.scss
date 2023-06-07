@@ -1,19 +1,18 @@
-@import 'fonts';
-@import 'variables';
-@import 'pages/main';
-@import 'html/buttons';
-@import 'html/text';
-@import 'animations/underline';
+@import "fonts";
+@import "variables";
+@import "html/buttons";
+@import "html/text";
+@import "animations/underline";
 
 html {
   font-size: 150%;
   font-family: var(--font-family);
 
-  cursor: url('~/assets/images/cursor.png') 15 15, auto;
+  cursor: url("~/assets/images/cursor.png") 15 15, auto;
 
   button,
   a {
-    cursor: url('~/assets/images/cursor.png') 15 15, auto !important;
+    cursor: url("~/assets/images/cursor.png") 15 15, auto !important;
   }
 
   p,
@@ -27,6 +26,37 @@ html {
   body {
     background-color: var(--bg-color);
     color: var(--fg-color);
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    > #__nuxt {
+      margin: auto;
+
+      min-height: 100vh;
+
+      max-width: 1000px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      > header,
+      > footer,
+      > main {
+        width: 100%;
+        box-sizing: border-box;
+
+        z-index: 2;
+      }
+
+      > main,
+      > footer {
+        padding: 1em;
+      }
+    }
 
     a {
       color: var(--fg-color);
@@ -56,3 +86,7 @@ html {
     }
   }
 }
+
+// PAGES
+@import "pages/page";
+@import "pages/blog";
