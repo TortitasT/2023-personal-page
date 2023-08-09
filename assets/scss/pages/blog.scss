@@ -1,5 +1,9 @@
 .blog {
   &__posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
     &__post {
       > a {
         display: grid;
@@ -29,6 +33,7 @@
         grid-area: date;
 
         font-size: 0.75em;
+        text-align: right;
 
         color: var(--tertiary-color);
       }

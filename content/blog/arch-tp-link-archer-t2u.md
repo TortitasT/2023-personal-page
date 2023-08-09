@@ -15,7 +15,7 @@ I've recently switched to Arch for my main desktop and I wanted to document how 
 
 ## Make installing from AUR a bit easier
 
-I am new to Arch so I cannot tell if this is a good practice. I installed `yay`. This binary makes installing from the AUR repository a bit easier.
+I installed `yay`. I am new to Arch so I cannot tell if this is a good practice. This binary makes installing from the AUR repository a bit easier.
 
 More info [here](https://github.com/Jguer/yay).
 
