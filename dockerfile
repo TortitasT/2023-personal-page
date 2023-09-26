@@ -19,6 +19,6 @@ COPY . .
 # RUN npm install -g pnpm
 # RUN pnpm install
 # RUN pnpm run build
-RUN yarn install
+RUN yarn install --ignore-engines
 RUN yarn build
 COPY ./sitemap.xml /app/sitemap.xml
