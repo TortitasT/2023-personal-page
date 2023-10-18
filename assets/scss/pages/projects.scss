@@ -4,7 +4,7 @@
     flex-direction: column;
     gap: 1em;
 
-    >div {
+    > div {
       padding: 1em 2em;
 
       @media (max-width: 575px) {
@@ -25,18 +25,18 @@
 
       transition: border-color 0.25s ease-out;
 
-      @media(hover: hover) {
+      @media (hover: hover) {
         &:hover {
           border-color: rgba(250, 250, 250, 0.5);
         }
       }
 
-      >a {
+      > a {
         display: flex;
         flex-direction: column;
         gap: 1em;
 
-        >p {
+        > p {
           font-size: 0.75em;
         }
       }
@@ -46,7 +46,7 @@
         flex-wrap: wrap;
         gap: 0.5em;
 
-        >small {
+        > small {
           font-size: 0.75em;
         }
       }

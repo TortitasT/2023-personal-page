@@ -1,6 +1,6 @@
 ---
-title: "How to get TP-LINK Archer T2U working in Arch Linux"
-description: "Finally solving a lifetime problem with the drivers of this adapter."
+title: 'How to get TP-LINK Archer T2U working in Arch Linux'
+description: 'Finally solving a lifetime problem with the drivers of this adapter.'
 date: 07/06/2023
 draft: true
 ---
@@ -22,11 +22,13 @@ More info [here](https://github.com/Jguer/yay).
 ## Install necessary packages
 
 Git of course.
+
 ```
 pacman -S git
 ```
 
 Basic tools to build packages.
+
 ```
 pacman -S base-devel
 ```
@@ -42,6 +44,7 @@ yay -S linux-headers
 ## Install the driver
 
 Install dkms driver!!
+
 ```
 yay -S rtl88xxau-aircrack-dkms-git .
 ```
@@ -51,11 +54,13 @@ yay -S rtl88xxau-aircrack-dkms-git .
 I'll leave here some neat commands for testing if this worked out.
 
 Will show all interfaces.
+
 ```
 ip link
 ```
 
 Will help you connect to a WiFi network.
+
 ```
 iwctl
 ```

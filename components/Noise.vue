@@ -41,14 +41,14 @@
   z-index: 1;
 
   &::after {
-    content: "";
+    content: '';
 
     position: absolute;
     width: 200vw;
     height: 200vh;
     left: -50%;
     top: -50%;
-    background-image: url("~/assets/images/noise.png");
+    background-image: url('~/assets/images/noise.png');
     background-size: 3em;
 
     filter: opacity(0.3);

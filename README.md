@@ -5,11 +5,13 @@
 Set remote host (need private key on keychain):
 
 - Powershell
+
 ```powershell
 $env:DOCKER_HOST = 'ssh://server@jonion.duckdns.org'
 ```
 
 - Bash
+
 ```bash
 export DOCKER_HOST='ssh://server@jonion.duckdns.org'
 ```

@@ -8,16 +8,16 @@
       > a {
         display: grid;
         grid-template:
-          "title date"
-          "description description";
+          'title date'
+          'description description';
 
         gap: 0.5em;
 
         @media (max-width: 400px) {
           grid-template:
-            "title title"
-            "date date"
-            "description description";
+            'title title'
+            'date date'
+            'description description';
         }
       }
 
@@ -96,7 +96,7 @@
       overflow-x: auto;
 
       code {
-        font-family: "Fira Code", monospace;
+        font-family: 'Fira Code', monospace;
         font-size: 0.75em;
       }
     }

@@ -2,26 +2,26 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      charset: "utf-16",
-      title: "Tortitas",
+      charset: 'utf-16',
+      title: 'Tortitas',
       meta: [
         {
-          name: "description",
-          content: "Tortitas personal portfolio webpage.",
+          name: 'description',
+          content: 'Tortitas personal portfolio webpage.',
         },
-        {name: "keywords", content: "portfolio, tortitas, tortitasdev"},
-        {name: "author", content: "Tortitas"},
+        { name: 'keywords', content: 'portfolio, tortitas, tortitasdev' },
+        { name: 'author', content: 'Tortitas' },
       ],
       htmlAttrs: {
-        lang: "en",
+        lang: 'en',
       },
     },
-    pageTransition: {name: 'page', mode: 'out-in'}
+    pageTransition: { name: 'page', mode: 'out-in' },
   },
 
   ssr: true,
 
-  modules: ["@nuxt/content"],
+  modules: ['@nuxt/content'],
 
   runtimeConfig: {
     github: {
@@ -29,4 +29,4 @@ export default defineNuxtConfig({
       token: process.env.GITHUB_TOKEN,
     },
   },
-});
+})

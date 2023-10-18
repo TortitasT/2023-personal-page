@@ -6,7 +6,10 @@
     </small>
 
     <small>
-      <a title="See the source code" href="https://github.com/TortitasT/2023-personal-page">
+      <a
+        title="See the source code"
+        href="https://github.com/TortitasT/2023-personal-page"
+      >
         <IconsGithub />
       </a>
     </small>
@@ -14,5 +17,5 @@
 </template>
 
 <style lang="scss">
-@import "assets/scss/components/footer";
+@import 'assets/scss/components/footer';
 </style>

@@ -1,18 +1,22 @@
-@import "fonts";
-@import "variables";
-@import "html/buttons";
-@import "html/text";
-@import "animations/underline";
+@import 'fonts';
+@import 'variables';
+@import 'html/buttons';
+@import 'html/text';
+@import 'animations/underline';
 
 html {
   font-size: 150%;
   font-family: var(--font-family);
 
-  cursor: url("~/assets/images/cursor.png") 15 15, auto;
+  cursor:
+    url('~/assets/images/cursor.png') 15 15,
+    auto;
 
   button,
   a {
-    cursor: url("~/assets/images/cursor.png") 15 15, auto !important;
+    cursor:
+      url('~/assets/images/cursor.png') 15 15,
+      auto !important;
   }
 
   p,
@@ -88,5 +92,5 @@ html {
 }
 
 // PAGES
-@import "pages/page";
-@import "pages/blog";
+@import 'pages/page';
+@import 'pages/blog';

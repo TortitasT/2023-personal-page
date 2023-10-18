@@ -1,20 +1,20 @@
 <template>
   <div class="follower-wrapper">
-    <div class="follower" ref="follower" />
+    <div ref="follower" class="follower" />
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted } from 'vue'
 
-const follower = ref(null);
+const follower = ref(null)
 
 const followMouse = () => {
-  const mouseX = window.event.clientX;
-  const mouseY = window.event.clientY;
+  const mouseX = window.event.clientX
+  const mouseY = window.event.clientY
 
-  follower.value.style.left = `${mouseX}px`;
-  follower.value.style.top = `${mouseY}px`;
+  follower.value.style.left = `${mouseX}px`
+  follower.value.style.top = `${mouseY}px`
 
   follower.value.animate(
     {
@@ -23,17 +23,17 @@ const followMouse = () => {
     },
     {
       duration: 5000,
-      easing: "ease-in-out",
-      fill: "forwards",
-    }
-  );
-};
+      easing: 'ease-in-out',
+      fill: 'forwards',
+    },
+  )
+}
 
 onMounted(() => {
-  document.addEventListener("mousemove", followMouse);
-});
+  document.addEventListener('mousemove', followMouse)
+})
 </script>
 
 <style lang="scss">
-@import "assets/scss/components/follower";
+@import 'assets/scss/components/follower';
 </style>
