@@ -21,7 +21,7 @@ export default defineNuxtConfig({
 
   ssr: true,
 
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', 'nuxt-simple-sitemap'],
 
   runtimeConfig: {
     github: {
