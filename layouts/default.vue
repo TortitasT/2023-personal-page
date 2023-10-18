@@ -1,10 +1,12 @@
 <template>
-  <Noise />
-  <Three />
-  <Follower />
-  <!-- <Cursor /> -->
+  <div>
+    <Noise />
+    <Three />
+    <Follower />
+    <!-- <Cursor /> -->
 
-  <Header />
-  <slot />
-  <Footer />
+    <Header />
+    <slot />
+    <Footer />
+  </div>
 </template>

@@ -4,16 +4,16 @@
     <h2>Here you can find all my projects uploaded to Github</h2>
 
     <section class="box-list">
-      <div v-for="(project, index) in projects" :key="index">
+      <div v-for="(project, i) in projects" :key="i">
         <a :href="project.html_url">
           <h3>
             {{ project.name }}
-            <small class="template" v-if="project.is_template">template</small>
+            <small v-if="project.is_template" class="template">template</small>
           </h3>
-          <div class="languages" v-if="project.languages.length > 0">
+          <div v-if="project.languages.length > 0" class="languages">
             <small
-              v-for="(language, index) in project.languages"
-              :key="index"
+              v-for="(language, j) in project.languages"
+              :key="j"
               :class="languageClassName(language)"
             >
               {{ language }}
@@ -27,49 +27,48 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue'
 
-const validate = (project) => {
-  let valid = true;
+const validate = project => {
+  let valid = true
 
-  if (project.name === "TortitasT") {
-    valid = false;
+  if (project.name === 'TortitasT') {
+    valid = false
   }
 
   if (project.description === null) {
-    valid = false;
+    valid = false
   }
 
   if (project.fork) {
-    valid = false;
+    valid = false
   }
 
   if (project.archived) {
-    valid = false;
+    valid = false
   }
 
-  return valid;
-};
+  return valid
+}
 
-const projects = ref([]);
+const projects = ref([])
 
-const { data } = await useFetch("/api/projects");
+const { data } = await useFetch('/api/projects')
 
-projects.value = data.value.filter((project) => {
-  return validate(project);
-});
+projects.value = data.value.filter(project => {
+  return validate(project)
+})
 
-const languageClassName = (language) => {
-  if (language === "C#") {
-    return "text--csharp";
+const languageClassName = language => {
+  if (language === 'C#') {
+    return 'text--csharp'
   }
 
-  return `text--${language.toLowerCase()}`;
-};
+  return `text--${language.toLowerCase()}`
+}
 </script>
 
 <style lang="scss">
-@import "assets/scss/pages/projects";
+@import 'assets/scss/pages/projects';
 </style>
 >
-

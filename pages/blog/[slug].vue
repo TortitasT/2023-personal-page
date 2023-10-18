@@ -11,7 +11,5 @@ const route = useRoute()
 
 const path = `/blog/${route.params.slug}`
 
-const blogPost = await queryContent("/blog")
-  .where({ _path: path })
-  .findOne()
+const blogPost = await queryContent('/blog').where({ _path: path }).findOne()
 </script>

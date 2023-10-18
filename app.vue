@@ -16,6 +16,5 @@
 .page-leave-to {
   opacity: 0;
   transform: translate3d(0, 20px, 0);
-  ;
 }
 </style>

@@ -1,6 +1,6 @@
 ---
-title: "Colored message of the day on an Ubuntu machine as a mistake prevention technique"
-description: "A simple way to wake you up when login in into a server terminal"
+title: 'Colored message of the day on an Ubuntu machine as a mistake prevention technique'
+description: 'A simple way to wake you up when login in into a server terminal'
 date: 07/06/2023
 draft: true
 ---
